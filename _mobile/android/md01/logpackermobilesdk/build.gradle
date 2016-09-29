@@ -1,0 +1,3 @@
+configurations.maybeCreate("default")
+artifacts.add("default", file('/Users/apple/workspace/go/src/github.com/logpacker/mobile-sdk/logpackermobilesdk.aar'))
+
