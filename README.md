@@ -10,4 +10,3 @@ It aims to be distributed, fast and easy to use.
 
 *NOTE*: It is still a **work in progress**
 
-Test01

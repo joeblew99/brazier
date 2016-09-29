@@ -10,11 +10,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 
-// import go.bind.Bind;
 
-// import go.hello.Hello;
+//import go.hello.Hello;
 
-import go.logpackermobilesdk.Logpackermobilesdk;
 //import go.cli.Cli;
 
 
@@ -38,35 +36,29 @@ public class MainActivity extends AppCompatActivity {
 
                 String textHello = "empty :)";
                 try {
+                    /*
+                    String textHello = Hello.Greetings("Android and Gopher");
+                    */
                     textHello = "new shit ";
 
                 } catch (Exception e) {
                     e.printStackTrace();
                 }
 
-                String logPackerText = "nul";
+
+
+                String textCli = "nul";
                 try {
-                    /*
-                    Logpackermobilesdk.Client client = Logpackermobilesdk.newClient("https://logpacker.mywebsite.com", "dev", android.os.Build.MODEL);
 
-                    Logpackermobilesdk.Message msg = client.NewMessage();
-                    msg.setMessage("Crash is here!");
-                    // Use another optional setters for msg object
-
-                    client.Send(msg); // Send will return Cluster response
-                    */
-
-                    logPackerText = "sent";
+                    textCli = "sent";
                 } catch (Exception e) {
                     // Cannot connect to Cluster or validation error
-                    logPackerText = e.toString();
+                    textCli = e.toString();
                 }
 
-                /*
-                String textHello = Hello.Greetings("Android and Gopher");
-                */
 
-                Snackbar.make(view, "Replace with your own action" + logPackerText, Snackbar.LENGTH_LONG)
+
+                Snackbar.make(view, "Replace with your own action" + textCli, Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });
